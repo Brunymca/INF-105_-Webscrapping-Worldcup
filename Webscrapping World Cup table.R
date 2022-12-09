@@ -33,13 +33,7 @@ df_worlcup=Worldcup()
  df_worlcup%>%arrange(desc(Pts)) %>%
    head(10)%>%
    ggplot(aes(y=Team, x=Pts))+
-   geom_bar (stat ='identity' )
-   
-###### Amélioration du graphique #####
- 
- df_worlcup%>%arrange(desc(Pts)) %>%
-   head(10)%>%
-   ggplot(aes(y=Team, x=Pts))+
-   geom_bar (stat ='identity', fill= "dodger blue")+
+   geom_bar (stat ='identity', fill= "dodger blue" )+
    theme_classic()
+  
 
